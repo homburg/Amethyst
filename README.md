@@ -106,13 +106,65 @@ Layouts can also be enabled/disabled to control whether they appear in the cycle
 
 The default layout. This gives you one "main pane" on the left, and one other pane on the right. By default, one window is placed in the main pane (extending the full height of the screen), and all remaining windows are placed in the other pane. If either pane has more than one window, that pane will be evenly split into rows, to show them all. You can use the keyboard shortcuts above to control which window(s), and how many, are in the main pane, as well as the horizontal size of the main pane vs. the other pane.
 
+<table>
+ <tr>
+  <td>1</td><td>2</td>
+ </tr>
+ </table>
+
+<table>
+ <tr>
+  <td rowspan="2">1</td>
+  <td>2</td>
+ </tr>
+ <tr>
+  <td>3</td>
+ </tr>
+ </table>
+
 #### Tall-Right
 
 Exactly the same as *Tall*, but the main pane is on the right, with the other pane on the left.
 
+<table>
+ <tr>
+  <td>2</td><td>1</td>
+ </tr>
+ </table>
+
+<table>
+ <tr>
+  
+  <td>2</td>
+  <td rowspan="2">1</td>
+ </tr>
+ <tr>
+  <td>3</td>
+ </tr>
+ </table>
+
 #### Wide
 
 The rotated version of *Tall*, where the main pane is on the _top_ (extending the full width of the screen), and the other pane is on the bottom. If either pane has more than one window, that pane will split into columns instead of rows.
+
+<table>
+ <tr>
+  <td>1</td>
+ </tr>
+ <tr>
+  <td>2</td>
+ </tr>
+ </table>
+
+<table>
+ <tr>
+  <td colspan="2">1</td>
+ </tr>
+ <tr>
+  <td>2</td>
+  <td>3</td>
+ </tr>
+ </table>
 
 #### 3Column-Left
 
